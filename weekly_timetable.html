@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        
+        td {
+            height: 40px;
+        }
+        
+        .time-slot {
+            background-color: #e8e8e8;
+            font-weight: bold;
+        }
+        
+        .office-hours {
+            background-color: #fff9e6;
+        }
+        
+        .lunch {
+            background-color: #ffe6e6;
+        }
+        
+        .course-code {
+            background-color: #e6f3ff;
+        }
+        
+        .no-classes {
+            background-color: #f0f0f0;
+        }
+        
+        .notes {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weekly Class Timetable</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time-slot">8:00am</td>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">9:00am</td>
+                    <td class="office-hours" rowspan="2">Office Hours</td>
+                    <td></td>
+                    <td></td>
+                    <td class="office-hours" rowspan="2">Office Hours</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">10:00am</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">11:00am</td>
+                    <td class="course-code">CS204A</td>
+                    <td class="course-code">CS301A</td>
+                    <td class="course-code">CS204A</td>
+                    <td class="course-code">CS301A</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">12:00pm</td>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">1:00pm</td>
+                    <td class="lunch" rowspan="2">Lunch</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="no-classes">No Classes</td>
+                </tr>
+                <tr>
+                    <td class="time-slot">2:00pm</td>
+                    <td class="office-hours" rowspan="2">Office Hours</td>
+                    <td class="office-hours" rowspan="2">Office Hours</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">3:00pm</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">4:00pm</td>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">5:30pm</td>
+                    <td class="course-code">CS505A</td>
+                    <td class="course-code">CS566AH1</td>
+                    <td class="course-code">CS656BH2</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">6:30pm</td>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">7:30pm</td>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">8:00pm</td>
+                    <td colspan="5"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="notes">
+            <p><strong>Notes:</strong></p>
+            <p>CS505A is a first term course</p>
+            <p>CS566BH is a second term course</p>
+        </div>
+    </div>
+</body>
+</html>

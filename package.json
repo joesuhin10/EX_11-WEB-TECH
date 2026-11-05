@@ -1,0 +1,8 @@
+{
+  "name": "toystoreapp",
+  "version": "1.0.0",
+  "description": "BrickBox Toy Store - Node.js + MongoDB CRUD",
+  "main": "app.js",
+  "scripts": { "start": "node app.js" },
+  "dependencies": { "mongodb": "^6.0.0" }
+}
